@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url(trees.png) repeat 0 0;;
+}
+
+#title {
+    text-align: center;
+    color: black;
+    font-family: Helvetica;
+}
+
+#instructions {
+    text-align: center;
+    display: block;
+    color: black;
+    font-family: Helvetica;
+}
+
+#status {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-family: Helvetica;
+    visibility: hidden;
+}
+
+.game-container {
+      margin-top: -5%;
+      display: grid;
+      flex-wrap: wrap; 
+      grid-template-columns: repeat(6, auto);
+      grid-gap: 5px;
+      column-gap: 5px;
+      justify-content: center;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: x-large;
+    font-family: Helvetica;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+.game-container {
+      margin-top: -5%;
+      display: grid;
+      flex-wrap: wrap; 
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 5px;
+      column-gap: 5px;
+      justify-content: center;
+}
+.card {
+    width: 170px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: x-large;
+    font-family: Helvetica;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+}
+
+@media screen and (max-width: 640px) {
+.game-container {
+      margin-top: -15%;
+      display: grid;
+      flex-wrap: wrap; 
+      grid-template-columns: repeat(1, auto);
+      grid-gap: 5px;
+      column-gap: 5px;
+      justify-content: center;
+}
+.card {
+    width: 170px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: x-large;
+    font-family: Helvetica;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+}
+
+#harryPicture {
+    background-image: url(photos/brother.jpg);
+    background-size: cover;
+}
+
+#stevePicture {
+    background-image: url(photos/grandchild1.jpg);
+    background-size: cover;
+}
+
+#williamPicture{
+    background-image: url(photos/grandchild2.jpg);
+    background-size: cover;
+}
+
+#jessiePicture {
+    background-image: url(photos/neice1.jpg);
+    background-size: cover;
+}
+
+#sierraPicture {
+    background-image: url(photos/neice2.jpg);
+    background-size: cover;
+}
+
+#alicePicture {
+    background-image: url(photos/neice3.jpg);
+    background-size: cover;
+}
+
+#ryanPicture {
+    background-image: url(photos/nephew1.jpg);
+    background-size: cover;
+}
+
+#maxPicture {
+    background-image: url(photos/nephew2.jpg);
+    background-size: cover;
+}
+
+#ruthPicture {
+    background-image: url(photos/sister.jpg);
+    background-size: cover;
+}
+
+[data-group="relationship"] {
+    background-color: lightgreen;
+}
+
+[data-group="name"] {
+    background-color: lightskyblue;
+}
+
+button {
+    font-size: x-large;
+    font-family: Helvetica;
+    text-align: center;
+    background-color: slategray;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: darkcyan;
+}
+
+#replay {
+    visibility: hidden;
+}
+
